@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #_*_ coding:utf-8 _*_
 
-__author__='SHI YAN'
+__author__='shiyan'
 
 '''
 async web application
@@ -14,7 +14,7 @@ from datetime import datetime
 from aiohttp import web
 
 def index(request):
-	return web.Response(body=b'<h1>Awesome</h1>', headers={'content-type':'text/html'})
+	return web.Response(body='<h1>欢迎光临</h1>',headers={'Content-Type':'text/html'})
 
 @asyncio.coroutine
 def init(loop):
